@@ -33,6 +33,11 @@ view: shoe_unique_prods {
       sql: ${TABLE}.unique ;;
     }
 
+    measure: unique_shoes {
+      type: max
+      sql: ${TABLE}.unique ;;
+    }
+
     set: detail {
       fields: [brand, unique]
     }

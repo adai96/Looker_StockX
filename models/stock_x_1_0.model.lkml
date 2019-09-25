@@ -33,3 +33,5 @@ explore: off_white_trans {}
 explore: yeezy {}
 
 explore: yeezy_trans {}
+
+explore: shoe_unique_prods {}

@@ -105,4 +105,9 @@ view: converse {
     type: count
     drill_fields: [item_name]
   }
+
+  measure: sales_count_converse {
+    type: sum
+    sql: ${total_sale_count} ;;
+  }
 }

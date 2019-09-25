@@ -100,4 +100,9 @@ view: off_white {
     type: count
     drill_fields: [item_name]
   }
+
+  measure: sales_count_Off_White {
+    type: sum
+    sql: ${total_sale_count} ;;
+  }
 }

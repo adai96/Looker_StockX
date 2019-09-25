@@ -105,4 +105,9 @@ view: yeezy {
     type: count
     drill_fields: [item_name]
   }
+
+  measure: sales_count_Yeezy {
+    type: sum
+    sql: ${total_sale_count} ;;
+  }
 }

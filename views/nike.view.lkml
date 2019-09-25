@@ -105,4 +105,9 @@ view: nike {
     type: count
     drill_fields: [item_name]
   }
+
+  measure: sales_count_Nike {
+    type: sum
+    sql: ${total_sale_count} ;;
+  }
 }

@@ -12,12 +12,24 @@ persist_with: stock_x_1_0_default_datagroup
 
 explore: adidas {}
 
+explore: adidas_trans {}
+
 explore: converse {}
+
+explore: converse_trans {}
 
 explore: jordan {}
 
+explore: jordan_trans {}
+
 explore: nike {}
+
+explore: nike_trans {}
 
 explore: off_white {}
 
+explore: off_white_trans {}
+
 explore: yeezy {}
+
+explore: yeezy_trans {}

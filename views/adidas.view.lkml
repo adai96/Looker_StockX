@@ -115,6 +115,20 @@ view: adidas {
   measure: sales_count_adidas {
     type: sum
     sql: ${total_sale_count} ;;
+
+  }
+
+  measure: avg_price {
+    label: "average_price"
+    type: average
+    sql: ${average_price} ;;
+    value_format_name: usd
+  }
+
+  measure: volatility_measure {
+    label: "volatility"
+    type: average
+    sql: ${volatility} ;;
   }
 
   measure: unique {

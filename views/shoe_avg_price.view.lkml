@@ -38,6 +38,7 @@ view: shoe_avg_price {
     label: "average_price"
     type: average
     sql: ${avg_price} ;;
+    value_format_name: usd
   }
 
   set: detail {

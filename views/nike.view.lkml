@@ -110,4 +110,8 @@ view: nike {
     type: sum
     sql: ${total_sale_count} ;;
   }
+  measure: unique {
+    type: count_distinct
+    sql: ${item_name} ;;
+  }
 }

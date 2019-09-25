@@ -115,6 +115,7 @@ view: yeezy {
     label: "average_price"
     type: average
     sql: ${average_price} ;;
+    value_format_name: usd
   }
 
   measure: volatility_measure {

@@ -34,6 +34,12 @@ view: shoe_avg_price {
     sql: ${TABLE}.avg_price ;;
   }
 
+  measure: avg_price_measure {
+    label: "average_price"
+    type: average
+    sql: ${avg_price} ;;
+  }
+
   set: detail {
     fields: [brand, avg_price]
   }

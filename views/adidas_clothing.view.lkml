@@ -3,7 +3,6 @@ view: adidas_clothing {
 
   dimension: annual_high {
     type: number
-    description: "Max"
     sql: ${TABLE}.Annual_High ;;
   }
 

@@ -37,3 +37,5 @@ explore: yeezy_trans {}
 explore: shoe_unique_prods {}
 
 explore: shoe_avg_price {}
+
+explore: active_asks {}

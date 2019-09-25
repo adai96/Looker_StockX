@@ -47,10 +47,10 @@ view: adidas {
     sql: ${TABLE}.Current_Highest_Bid ;;
   }
 
-  dimension: image_url {
-    type: string
-    sql: ${TABLE}.Image_URL ;;
-  }
+#   dimension: image_url {
+#     type: string
+#     sql: ${TABLE}.Image_URL ;;
+#   }
 
   dimension: item_name {
     type: string
@@ -101,6 +101,12 @@ view: adidas {
     sql: ${TABLE}.Volatility ;;
   }
 
+  dimension: image {
+    type: string
+    sql: ${TABLE}.Image_URL;;
+    html: <img src="https://stockx.imgix.net/{{value}}" /> ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [item_name]
@@ -123,5 +129,10 @@ view: adidas {
     label: "volatility"
     type: average
     sql: ${volatility} ;;
+  }
+
+  measure: unique {
+    type: count_distinct
+    sql: ${item_name} ;;
   }
 }

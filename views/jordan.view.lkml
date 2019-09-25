@@ -111,6 +111,7 @@ view: jordan {
     sql: ${total_sale_count} ;;
   }
 
+
   measure: avg_price {
     label: "average_price"
     type: average
